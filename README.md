@@ -25,12 +25,11 @@ Users should be able to:
 
 ### Screenshot
 
-![mobile-view](./images/mobileview.png)
-![desktop-view](./images/desktopview.png)
-![active](./images/active.png)
+![desktop-view](/images/desktop-view.png)
 ### Links
 
-- Solution URL: [https://github.com/manjubhaskar02/FM-6-product-preview-card-component](https://github.com/manjubhaskar02/FM-6-product-preview-card-component)
+
+- Solution URL: [https://github.com/manjubhaskar02/Product-preview-card](https://github.com/manjubhaskar02/Product-preview-card)
 - Live Site URL: [https://manjubhaskar02.github.io/FM-6-product-preview-card-component/](https://manjubhaskar02.github.io/FM-6-product-preview-card-component/)
 
 ## My process
