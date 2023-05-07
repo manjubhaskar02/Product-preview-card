@@ -1,0 +1,242 @@
+:root {
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --lighten-dark-blue: hsla(212, 21%, 14%, 0.5);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    width: 1440px;
+    margin: 0 auto;
+    background-color: var(--cream);
+    background-image: url(images/unsplash_gWxwThHT7Vo.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.flex {
+    display: flex;
+}
+
+.card {
+    display: flex;
+    width: 43%;
+    margin: 150px auto;
+    height: 460px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 15px 200px 0px #6F2E15;
+}
+.banner{
+    background-image: url(images/unsplash.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+}
+.product-img {
+    width: 50%;
+    filter: brightness(0.9);
+}
+
+.review {
+    width: 50%;
+    background-color: var(--white);
+    padding: 14px 32px;
+}
+
+
+.perfume {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #A5A6A9;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+.top-text {
+    font-family: 'Fraunces', serif;
+    text-transform: capitalize;
+    font-size: 33px;
+    color: #995D33;
+    line-height: 34px;
+}
+
+.text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #A0A0AA;
+    font-weight: 500;
+    line-height: 24px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.price {
+    font-family: 'Fraunces', serif;
+    text-transform: capitalize;
+    font-size: 33px;
+    color: #8F4F2B;
+    padding-right: 18px;
+}
+
+.delete {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #A0A0AA;
+    font-weight: 500;
+}
+
+.cart {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 65px;
+    background-color: #CE7B41;
+    color: var(--white);
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 26px 0px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+}
+
+.cart::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-110%, 0) skew(-30deg);
+    transition: 1.0s;
+    background-color: #efa978;
+    width: 130%;
+    height: 55px;
+
+
+}
+
+.cart:hover::before {
+    transform: translate(-5%, 0) skew(-15deg);
+
+}
+
+.cart:hover .cart-text {
+    color: var(--white);
+    position: relative;
+
+
+}
+
+.cart:hover .cart-img {
+    position: relative;
+    animation-name: jump;
+    animation-duration: .4s;
+    animation-iteration-count: 4;
+
+}
+
+@keyframes jump {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+
+    50% {
+        bottom: 0px;
+        top: 10px;
+    }
+
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+
+}
+
+.center {
+    align-self: center;
+}
+
+.hide {
+    display: none;
+}
+
+/* footer */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* mobile view */
+@media screen and (max-width: 480px) {
+    body {
+        width: 375px;
+        background-image: none;
+        background-color: #fff;
+    }
+
+    .card {
+        flex-direction: column;
+        width: unset;
+        margin: 26px 16px;
+        height: unset;
+        border-radius: 10px;
+        box-shadow: none;
+    }
+    .banner{
+        background-image: url(images/unsplash_mobile.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+    
+    .product-img {
+        display: none;
+    }
+
+    .mob-img {
+        display: block;
+        width: 320px;
+        filter: brightness(0.9);
+        margin: auto;
+    }
+
+    .review {
+        width: unset;
+        padding: 14px 25px;
+    }
+
+    .perfume {
+        font-size: 13px;
+    }
+
+    .top-text {
+        font-size: 31px;
+    }
+
+    .text {
+        padding-right: 0px;
+        padding-bottom: 10px;
+    }
+
+    .price {
+        font-size: 31px;
+        padding-right: 18px;
+    }
+
+    .cart {
+        padding: 2px 90px;
+    }
+
+}
