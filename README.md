@@ -30,7 +30,7 @@ Users should be able to:
 
 
 - Solution URL: [https://github.com/manjubhaskar02/Product-preview-card](https://github.com/manjubhaskar02/Product-preview-card)
-- Live Site URL: [https://manjubhaskar02.github.io/FM-6-product-preview-card-component/](https://manjubhaskar02.github.io/FM-6-product-preview-card-component/)
+- Live Site URL: [https://manjubhaskar02.github.io/Product-preview-card/](https://manjubhaskar02.github.io/Product-preview-card/)
 
 ## My process
 
